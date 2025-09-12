@@ -7,10 +7,23 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
 
+    html, body {
+  overflow-x: hidden;
+}
+
+    body {
+      margin: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
     model-viewer {
       width: 100%;
       /* max-width: 600px; */
-      height: 1000px;
+      height: 800px;
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -69,7 +82,7 @@
 </div>
 
       <!-- Bottom: 5 Buttons -->
-    <div class="d-flex justify-content-center gap-3 mb-3">
+    <div class="d-flex justify-content-center gap-3">
       <button class="btn btn-circle" style="background-color: #bfbfbe; color: white;" onclick="changeBodyColor('#F4F5F1', 'brilliant white')"></button>
       <button class="btn btn-circle" style="background-color: #101030; color: white;" onclick="changeBodyColor('#15153101030d', 'blue')"></button>
       <button class="btn btn-circle" style="background-color: #80430f; color: white;" onclick="changeBodyColor('#351a03', 'orange')"></button>
